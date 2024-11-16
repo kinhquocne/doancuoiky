@@ -1,0 +1,98 @@
+#content{
+    background-image: url('/web/img/Logo_blur.png');
+    background-size: cover;
+    /* background-position-y: -80px; */
+    min-height: 1000px;
+    /* Để footer không đè lên nội dung, dùng padding-bottom với chiều cao của footer */
+    padding-bottom: 60px;
+    box-sizing: border-box;
+
+}
+.container{
+    max-width: 960px;
+    margin: 0px auto;
+}
+#header{
+    background-color: rgb(43, 48, 63);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+#logo {
+    padding: 5px 0px;
+}
+#logo img{
+    max-width: 50px;
+    height: auto;
+    border-radius: 100%;
+}
+#main_menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#main_menu li {
+    position: relative;
+}
+#main_menu li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 23px 20px;
+}
+#main_menu ul.sub_member{
+    display: none;
+    position: absolute;
+    background-color:  rgb(43, 48, 90);
+    padding: 15px 0px;
+    list-style: none;
+    width: 175px;
+}
+#main_menu li:hover ul.sub_member{
+    display: block;
+}
+
+#main_menu ul.sub_member a{
+    padding: 8px 15px;
+    border-bottom: 3px solid rgb(89, 96, 116);
+}
+#main_menu ul.sub_member li:hover a{
+    border-bottom: 3px solid rgb(173, 187, 227);
+}
+#main_menu ul.sub_member li:last-child a {
+    border: none;
+}
+/*Thiết lập border trong khi hover*/
+#main_menu>li>a{
+    position: relative;
+}
+#main_menu>li>a::before{
+    content: "";
+    height: 3px;
+    width: 0px;
+    left: 0px;
+    bottom: 0px;
+    background:rgb(114, 122, 195);
+    position: absolute;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#main_menu>li:hover>a::before{
+    width: 100%;
+}
+footer
+{
+    justify-items:center;
+    justify-content: space-between;
+    display: flex;
+    bottom: 0px;
+    background-color: rgb(100, 122, 185);
+    padding: 0px 30px 0px 30px;
+    line-height: 30px;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(21, 51, 132);
+}
