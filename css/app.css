@@ -96,3 +96,44 @@ footer a{
     text-decoration: none;
     color: rgb(21, 51, 132);
 }
+.member_table{
+    border: 2px solid purple;
+    margin: 50px;
+}
+.member_table1{
+    list-style: none;
+    justify-items:center;
+    justify-content: space-between;
+    display: flex;
+    height: 200px;
+}
+.member_table2{
+    list-style: none;
+    justify-items:center;
+    justify-content: space-between;
+    display: flex;
+    height: 200px;
+}
+.member_table1 li{
+    margin: 50px;
+    width: 300px;
+    border: 2px solid red;
+}
+.member_table1 li a{
+    padding: 20px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    width: 500px;
+}
+.member_table2 li{
+    margin: 50px;
+    width: 300px;
+    border: 2px solid red;
+}
+.member_table2 li a{
+    padding: 20px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+}
