@@ -1,6 +1,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    margin: 0;
 }
 #content{
     background-image: url('../img/Logo_blur.png');
@@ -24,6 +25,10 @@ body{
     background-color: rgb(43, 48, 63);
     font-weight: 700;
     font-size: large;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    position: fixed;
 }
 nav{
     display: flex;
@@ -102,10 +107,12 @@ nav{
 }
 footer
 {
+    position:relative;
+    left: 0px;
+    bottom: 0px;
     justify-items:center;
     justify-content: space-between;
     display: flex;
-    bottom: 0px;
     background-color: rgb(100, 122, 185);
     padding: 10px 30px 10px 30px;
     line-height: 10px;
