@@ -1,12 +1,12 @@
 #content{
     background-image: url('../img/Logo_blur.png');
     background-size: cover;
-    /* background-position-y: -80px; */
-    min-height: 1000px;
+    background-attachment: fixed;
+    background-position-y: -100px;
+    min-height: 600px;
     /* Để footer không đè lên nội dung, dùng padding-bottom với chiều cao của footer */
     padding-bottom: 60px;
     box-sizing: border-box;
-
 }
 .container{
     max-width: 960px;
@@ -49,7 +49,7 @@ nav{
     background-color:  rgb(43, 48, 90);
     padding: 15px 0px;
     list-style: none;
-    width: 175px;
+    width: 190px;
 }
 #main_menu li:hover ul.sub_member{
     display: block;
@@ -95,45 +95,4 @@ footer
 footer a{
     text-decoration: none;
     color: rgb(21, 51, 132);
-}
-.member_table{
-    border: 2px solid purple;
-    margin: 50px;
-}
-.member_table1{
-    list-style: none;
-    justify-items:center;
-    justify-content: space-between;
-    display: flex;
-    height: 200px;
-}
-.member_table2{
-    list-style: none;
-    justify-items:center;
-    justify-content: space-between;
-    display: flex;
-    height: 200px;
-}
-.member_table1 li{
-    margin: 50px;
-    width: 300px;
-    border: 2px solid red;
-}
-.member_table1 li a{
-    padding: 20px;
-    border: 2px solid black;
-    text-decoration: none;
-    color: black;
-    width: 500px;
-}
-.member_table2 li{
-    margin: 50px;
-    width: 300px;
-    border: 2px solid red;
-}
-.member_table2 li a{
-    padding: 20px;
-    border: 2px solid black;
-    text-decoration: none;
-    color: black;
 }
