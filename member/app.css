@@ -1,8 +1,8 @@
 .member_table{
     /* border: 2px solid purple; */
     padding-right: 40px;
-    padding-top: 50px;
-    margin: 60px;
+    padding-top: 20px;
+    /* margin-top: 20px; */
 }
 .member_table1{
     list-style: none;
@@ -31,7 +31,6 @@
     text-decoration: none;
     color: black;
     /* width: auto; */
-    text-align: center;
 }
 .member_table img{
     width: 180px;
@@ -40,6 +39,10 @@
 }
  #name{
     width: 180px;
+    /* background-color: rgb(217, 213, 225); */
+    /* border-radius: 8px; */
     /* border: 1px solid black; */
     text-align: center;
+    margin-top: 10px;
+    height: 30px;
 }

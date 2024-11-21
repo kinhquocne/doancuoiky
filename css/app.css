@@ -1,3 +1,7 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
 #content{
     background-image: url('../img/Logo_blur.png');
     background-size: cover;
@@ -7,6 +11,10 @@
     /* Để footer không đè lên nội dung, dùng padding-bottom với chiều cao của footer */
     padding-bottom: 60px;
     box-sizing: border-box;
+    margin-left: 150px;
+    margin-right: 150px;
+    border: 1px solid black;
+    /* margin-top: px; */
 }
 .container{
     max-width: 960px;
@@ -14,6 +22,8 @@
 }
 #header{
     background-color: rgb(43, 48, 63);
+    font-weight: 700;
+    font-size: large;
 }
 nav{
     display: flex;
@@ -47,9 +57,11 @@ nav{
     display: none;
     position: absolute;
     background-color:  rgb(43, 48, 90);
-    padding: 15px 0px;
+    padding: 10px 0px;
     list-style: none;
-    width: 190px;
+    width: 170px;
+    font-weight: 500;
+    font-size: small;
 }
 #main_menu li:hover ul.sub_member{
     display: block;
@@ -82,6 +94,29 @@ nav{
 #main_menu>li:hover>a::before{
     width: 100%;
 }
+#title{
+    font-family: "Anton", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+}
+#poster{
+    width: 100%;
+    object-fit: cover;
+}
+#message
+{
+    margin: 50px 15px 0px 15px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    font-style: italic;
+    font-weight: 500;
+    border: 4px dashed gray;
+    border-radius: 70px 10px;
+    padding: 10px;
+    background-color: rgba(148, 165, 183, 0.319);
+}
 footer
 {
     justify-items:center;
@@ -89,10 +124,13 @@ footer
     display: flex;
     bottom: 0px;
     background-color: rgb(100, 122, 185);
-    padding: 0px 30px 0px 30px;
-    line-height: 30px;
+    padding: 10px 30px 10px 30px;
+    line-height: 10px;
+    color: rgb(78, 70, 146);
+    font-weight: 100;
+    font-size: smaller;
 }
 footer a{
     text-decoration: none;
-    color: rgb(21, 51, 132);
+    color: rgb(78, 70, 146);
 }
