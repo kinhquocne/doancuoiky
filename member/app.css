@@ -45,4 +45,54 @@
     text-align: center;
     margin-top: 10px;
     height: 30px;
+    font-size: smaller;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+#info{
+    /* border: 1px solid blue; */
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    display: flex;
+    font-family: "Rokkitt", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    background-color: rgba(198, 205, 207, 0.699);
+    border-radius: 30px;
+}
+#profile_pic{
+    position: static;
+    margin: 40px 0px 0px 40px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+}
+#profile
+{
+    position: relative;
+    margin-top: 0px;
+    width: auto;
+    /* border: 1px solid red; */
+    right: 0px;
+    padding: 40px;
+}
+#quote{
+    /* position: relative; */
+    /* top: 600px; */
+    width: 96%;
+    margin-top: 20px;
+    border-left: 40px double rgb(62, 62, 120);
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(148, 165, 183, 0.319);
+    font-size: 35px;
+    font-family: "Cormorant Upright", serif;
+    font-weight: 500;
+    font-style: italic;
+    
 }
