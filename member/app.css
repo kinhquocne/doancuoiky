@@ -43,5 +43,6 @@
     font-family: "Cormorant Upright", serif;
     font-weight: 500;
     font-style: italic;
-    
+    min-height: min-content;
+
 }
