@@ -2,47 +2,65 @@
     /* border: 1px solid blue; */
     width: 100%;
     margin-top: 100px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     display: flex;
-    font-family: "Rokkitt", serif;
+    font-family: "noto", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 35px;
-    background-color: rgba(198, 205, 207, 0.699);
-    border-radius: 30px;
+    background-color: #ffffff0f;
+    border-radius: 10px;
+    color: rgb(162, 162, 162);
 }
 #profile_pic{
     position: static;
-    margin: 40px 0px 0px 40px;
+    /* margin: 40px 0px 0px 40px; */
     width: 400px;
-    height: 400px;
+    aspect-ratio: 3/4;
     object-fit: cover;
-    border-bottom-left-radius: 50%;
+    /* border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
-    border-top-right-radius: 50%;
+    border-top-right-radius: 50%; */
 }
 #profile
 {
-    position: static;
+    /* position: static; */
     margin-top: 0px;
-    width: auto;
+    width: 100%;
     /* border: 1px solid red; */
     right: 0px;
-    padding: 40px;
+    align-content: center;
+    justify-items: center;
+    /* border: 1px solid red; */
+
+}
+#profile ul{
+    list-style: none;
+    /* border: 1px solid blue; */
+    /* width: fit-content; */
+    font-style: italic;
+}
+.name {
+    font-family: "Anton", serif;
+    font-size: 60px;
+    /* border: 1px solid yellow; */
+    margin-bottom: 0;
+    margin-top: 0;
+    font-style: normal;
 }
 #quote{
     /* position: relative; */
     /* top: 600px; */
     width: 96%;
     margin-top: 20px;
-    border-left: 40px double rgb(62, 62, 120);
+    border-left: 40px double #0c6073;
     text-align: center;
     padding: 10px;
-    background-color: rgba(148, 165, 183, 0.319);
+    background-color: #43697133;
     font-size: 35px;
     font-family: "Cormorant Upright", serif;
     font-weight: 500;
     font-style: italic;
     min-height: min-content;
-
+    color: rgb(162, 162, 162);
 }
