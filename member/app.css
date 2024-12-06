@@ -1,16 +1,17 @@
 #info{
     /* border: 1px solid blue; */
-    width: 100%;
+    min-width: fit-content;
     margin-top: 100px;
     /* padding-bottom: 30px; */
     display: flex;
     font-family: "noto", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 35px;
+    font-size: 230%;
     background-color: #ffffff0f;
     border-radius: 10px;
     color: rgb(162, 162, 162);
+    padding-right: 5%;
 }
 #profile_pic{
     position: static;
@@ -27,6 +28,7 @@
     /* position: static; */
     margin-top: 0px;
     width: 100%;
+    /* width: 100%; */
     /* border: 1px solid red; */
     right: 0px;
     align-content: center;
