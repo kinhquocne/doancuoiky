@@ -195,21 +195,22 @@ footer a{
 }
 #modal-container.show 
 {
-    display: block;
+    display: block; 
 }
-#modal 
-{
+.modal 
+{   
+    /* border: 1px solid red; */
     height: 100%;
+    width: fit-content;
     box-sizing: border-box;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
-#modal img
+.modal img
 {
     object-fit: contain;
     height: 100%;
-      
 }
 #modal-container button
 {
@@ -219,6 +220,7 @@ footer a{
     background: none;
     color: rgb(200, 200, 200);
     border: none;
+    cursor: pointer;
 }
 #modal-open
 {

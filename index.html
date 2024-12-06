@@ -97,8 +97,8 @@
     </footer>
     <!-- Modal -->
     <div id="modal-container" class="">
-        <div id="modal">
-            <img src="./img/2.png" alt="poster" style="width: 100%;">
+        <div class="modal" id="modal-demo">
+            <img src="./img/2.png" alt="poster">
         </div>
         <button id="modal-close"><i class="fa-solid fa-xmark"></i></button>
     </div>
@@ -107,11 +107,18 @@
         const modal_open = document.getElementById('modal-open');
         const modal_close = document.getElementById('modal-close');
         const modal_container = document.getElementById('modal-container');
+        const modal_demo = document.getElementById('modal-demo')
         modal_open.addEventListener('click',()=>{
             modal_container.classList.add('show');
         });
         modal_close.addEventListener('click',()=>{
             modal_container.classList.remove('show');
+        });
+        modal_container.addEventListener('click',(e)=>{
+            if(!modal_demo.contains(e.target))
+            {
+                modal_container.classList.remove('show');
+            }
         });
      </script>
 </body>
