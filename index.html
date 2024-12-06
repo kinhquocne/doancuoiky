@@ -64,7 +64,7 @@
         </nav>
     </header>
     <div id = "content">
-        <img id = "poster" src = "./img/2.png" alt = "">
+        <button id="modal-open"><img id = "poster" src = "./img/2.png" alt = ""></button>
         <p id = "message">
             "Quên hết mọi thứ và chạy trốn, hoặc đối mặt với tất cả và vươn lên, lựa chọn là của bạn.<br>
             Hôm nay bạn đang ở nơi mà suy nghĩ của bạn đã đưa bạn đến; ngày mai bạn sẽ ở nơi mà suy nghĩ của bạn sẽ dẫn bạn tới."
@@ -96,12 +96,23 @@
         <!-- / class fRight --></div>
     </footer>
     <!-- Modal -->
-    <div id="modal-container">
+    <div id="modal-container" class="">
         <div id="modal">
-            <img src="./img/2.png" alt="" style="width: 100%;">
-            <button><i class="fa-solid fa-xmark"></i></button>
+            <img src="./img/2.png" alt="poster" style="width: 100%;">
         </div>
+        <button id="modal-close"><i class="fa-solid fa-xmark"></i></button>
     </div>
     <!-- End Modal -->
+     <script>
+        const modal_open = document.getElementById('modal-open');
+        const modal_close = document.getElementById('modal-close');
+        const modal_container = document.getElementById('modal-container');
+        modal_open.addEventListener('click',()=>{
+            modal_container.classList.add('show');
+        });
+        modal_close.addEventListener('click',()=>{
+            modal_container.classList.remove('show');
+        });
+     </script>
 </body>
 </html>

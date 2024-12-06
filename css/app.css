@@ -7,7 +7,6 @@ body{
 #content{
     /* background-image: url('../img/Poster_demo2.png'); */
     background-size: cover;
-    background-attachment: fixed;
     background-position-y: -100px;
     min-height: 600px;
     /* Để footer không đè lên nội dung, dùng padding-bottom với chiều cao của footer */
@@ -28,7 +27,7 @@ body{
     width: 100%;
     left: 0px;
     top: 0px;
-    position: fixed;
+    position: sticky;
     z-index: 1;
 }
 nav{
@@ -173,9 +172,61 @@ footer
     color: #748497;
     font-weight: 100;
     font-size: smaller;
-    width: 96%;
+    width: 100%;
+    box-sizing: border-box;
 }
 footer a{
     text-decoration: none;
     color: #748497;
+}
+#modal-container
+{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed; 
+    z-index: 2;
+    top:0;
+    left: 0;
+    margin: 0;
+    display: none;
+}
+#modal-container.show 
+{
+    display: block;
+}
+#modal 
+{
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#modal img
+{
+    object-fit: contain;
+    height: 100%;
+      
+}
+#modal-container button
+{
+    top: 20px;
+    right: 20px;
+    position: fixed;
+    background: none;
+    color: rgb(200, 200, 200);
+    border: none;
+}
+#modal-open
+{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+#modal-container button i
+{
+    font-size: 70px;
 }
